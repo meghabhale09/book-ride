@@ -1,0 +1,223 @@
+/*.container{
+   background: none;
+   border: 0;
+   border-spacing: 0;
+   color: rgb(49, 46, 173);
+   cursor: auto;
+   direction: ltr;
+   font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+   font-size: 15px;
+   font-style: normal;
+   font-weight: normal;
+   letter-spacing: normal;
+   line-height: 1;
+   margin: 12px;
+   padding: 0;
+   text-align: left;
+   text-decoration: none;
+   text-indent: 0;;
+   visibility: visible;
+   white-space: normal;
+   word-spacing: normal;
+   display : block;
+ }
+
+ a{
+      text-decoration: none;
+ }
+ *//*
+
+
+ html{
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+ body{
+ height:100%;
+ }
+ .header {
+   overflow: hidden;
+   background-color: #41F73B;
+   padding: 20px 10px;
+ }
+
+ */
+/* Style the header links *//*
+
+ .header a {
+   float: left;
+   color: #FFFFFF;
+   text-align: center;
+   padding: 12px;
+   text-decoration: none;
+   font-size: 18px;
+   line-height: 25px;
+   border-radius: 4px;
+ }
+
+ */
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger *//*
+
+ .header a.logo {
+   font-size: 25px;
+   font-weight: bold;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+ }
+
+ */
+/* Change the background color on mouse-over *//*
+
+ .header a:hover {
+   background-color:#FFFFFF;
+   color: #41F73B;
+ }
+
+
+ */
+/* sets link section to the right *//*
+
+ .header-right {
+   float: right;
+ }
+
+
+ */
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other *//*
+
+ @media screen and (max-width: 500px) {
+   .header a {
+     float: none;
+     display: block;
+     text-align: left;
+   }
+   .header-right {
+     float: none;
+   }
+ }
+
+main{
+    height:-webkit-fill-available;
+}
+ .sectionBg{
+
+    background-image: url("../images/carpool1.jpg");
+    height: -webkit-fill-available;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .findRideDiv{
+    float: left;
+    padding-top: 25%;
+    padding-left: 20%;
+ }
+
+ .offerRideDiv{
+     float: right;
+     padding-top: 25%;
+     padding-right: 20%;
+ }
+
+ .button {
+   background-color:  #41F73B;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+ }
+
+
+ footer div p{
+    text-align:center;
+ }*/
+
+ .fakeimg {
+     height: 400px;
+   }
+
+#offerRide{
+    background-image: url("../images/carpool.jpg");
+}
+
+.backgroundStyle{
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#findRide{
+    background-image: url("../images/findride.jpg");
+}
+
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-logo{
+    position: relative;
+    margin-left: -41.5%;
+}
+.login-logo img{
+    position: absolute;
+    width: 20%;
+    margin-top: 19%;
+    background: #282726;
+    border-radius: 4.5rem;
+    padding: 5%;
+}
+
+#loginContainer{
+    display: inline-block;
+    width: 500px;
+}
+
+#formContainer{
+    display: table-cell;
+    width: 500px;
+}
+
+.login-form-1{
+    padding: 9%;
+    background:#3b3c4a;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    margin-bottom:12%;
+    color:#fff;
+}
+.btnSubmit{
+    font-weight: 600;
+    width: 50%;
+    color: #282726;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding:2%;
+}
+.btnForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btnForgetPwd:hover{
+    text-decoration:none;
+    color:#fff;
+}
+
+#formContainer h2{
+color:#ffffff;
+}
+
+p#id{
+    visibility: hidden;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="html/header.html :: head">
+</head>
+<body>
+<div>
+    <div th:replace="html/header.html::header"></div>
+    <div class="text-center">
+        <div class="container login-container text-center">
+            <div id="loginContainer" class="row">
+                <div id="formContainer" class="col-lg-8 login-form-1">
+
+                    <h2>User SignUp</h2>
+                    <form action="#" th:action="@{/signUp}" th:object="${user}" method="post">
+                        <!--<p id="id" th:if="${user.id != null}"><input type="text" th:field="*{id}"/></p>-->
+                        <div class="form-group"><input type="text" class="form-control" placeholder="First Name" required th:field="*{firstName}" /></div>
+                        <div class="form-group"><input type="text" class="form-control" placeholder="Last Name" required th:field="*{lastName}" /></div>
+                         <div class="form-group"><input type="text" class="form-control" placeholder="Building Name / Street Address" required th:field="*{address}" /></div>
+                         <div class="form-group"><input type="text" class="form-control" placeholder="City" required th:field="*{city}" /></div>
+                        <div class="form-group"> <input type="text" class="form-control" placeholder="province" required th:field="*{province}" /></div>
+                        <div class="form-group"> <input type="text" class="form-control" placeholder="Country" required th:field="*{country}" /></div>
+                        <div class="form-group"> <input type="email" class="form-control" placeholder="Email" required th:field="*{email}" /></div>
+                        <div class="form-group"> <input type="tel" name="phone" class="form-control" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required th:field="*{phoneNumber}" /></div>
+
+                        <div class="form-group"><input class="form-control" type="submit" value="Submit" /></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <!--   <div>
+        <h2>Driving License Details</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Driving License Number</th>
+                <th>License Expiry Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:if="${user.carOwner!=null}">
+            <tr>
+                <td><span th:text="${user.carOwner.drivingLicenseNumber}"> drivingLicenseNumber </span></td>
+                <td><span th:text="${user.carOwner.licenseExpiryDate}"> licenseExpiryDate </span></td>
+            </tr>
+            </tbody>
+        </table>
+        <div>-->
+ <!--           <h2>Car Details</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Car Number</th>
+                    <th>Number of Seats Offered</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:if="${user.carOwner!=null}">
+                <tr>
+                    <td><span th:text="${user.carOwner.car.vehicleNumber}"> Car Number </span></td>
+                    <td><span th:text="${user.carOwner.car.seats}"> Seats  </span></td>
+                </tr>
+                </tbody>
+            </table>-->
+<!--     <div th:if="${user.id != null}">
+            <h3>Add License Details</h3>
+            <form action="#" th:action="@{/__${user.id}__/carOwner}" th:object="${carOwner}" method="post">
+                <p>Driving License Number: <input type="text" th:field="*{drivingLicenseNumber}" /></p>
+                <p>Expiry Date: <input type="text" th:field="*{licenseExpiryDate}" /></p>
+            </form>
+         <form action="#" th:action="@{/__${user.id}__/car}" th:object="${car}" method="post">
+             <h3>Add Car Details</h3>
+                <p>Vehicle Number: <input type="text" th:field="${car.vehicleNumber}" /></p>
+                <p>Number Of Seats Offered <input type="text" th:field="${car.seats}" /></p>
+
+                <p><input type="submit" value="Submit" /></p>
+            </form>
+        </div>-->
+    </div>
+<div th:replace="html/footer.html::footer"> </div>
+</body>
+</html>

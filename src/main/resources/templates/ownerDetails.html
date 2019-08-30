@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="html/header.html :: head">
+</head>
+<body>
+    <div th:replace="html/header.html::header"></div>
+    <div>
+        <div class="text-center">
+            <div class="container login-container text-center">
+                <div id="loginContainer" class="row">
+                    <div id="formContainer" class="col-lg-8 login-form-1">
+
+                        <h2>User SignUp</h2>
+                        <form action="#" th:action="@{/addDetails}" th:object="${user}"  method="post">
+                            <p id="id" th:if="${user.id != null}"><input type="text" th:field="*{id}"/></p>
+                            <div class="form-group"><input type="text" class="form-control" placeholder="Driving License Number" required th:field="${carOwner.drivingLicenseNumber}" /></div>
+                            <div class="form-group"><input type="text" class="form-control" placeholder="Driving License Expiry Date" required th:field="${carOwner.licenseExpiryDate}" /></div>
+                            <div class="form-group"><input type="text" class="form-control" placeholder="Vehicle Number" required th:field="${car.vehicleNumber}" /></div>
+                            <div class="form-group"><input type="text" class="form-control" placeholder="Seats" required th:field="${car.seats}" /></div>
+
+                            <div class="form-group"><input class="form-control" type="submit" value="Submit" /></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div th:replace="html/footer.html::footer"> </div>
+</body>
+</html>
